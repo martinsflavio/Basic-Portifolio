@@ -1,9 +1,7 @@
+/*-------------------------- Global -----------------------------------*/
 /* Removin spaces around the page */
 * { margin: 0; padding: 0;}
 
-
-
-/* Global */
 body {
 	color: #777777;
 	background-image: url("../images/bPage.png");
@@ -23,8 +21,8 @@ p, a {
 }
 
 
+/*-------------------------- Header -----------------------------------*/
 
-/* Header */
 header {
 	padding-bottom: 80px;
 	background: #ffffff;
@@ -40,11 +38,7 @@ div#myName {
 	background-color: #4aaaa5;
 }
 
-
-
-
-
-/* Navigation Bar inside Header */
+/*-------------------- Navigation Bar inside Header ----------------------*/
 
 span {	/* Gray lines in navBar */
 	color:#e3e3e3; 
@@ -66,12 +60,11 @@ header a {
 	text-decoration: none;
 }
 
-
-
-/* Styling boxes on the body */
+/*--------------------Styling Boxes -----------------------------------*/
+/* Boxes Body */
 section {
 	width: auto;
-	height: 550px;
+	height: 1000px;
 	padding-top: 35px;
 }
 
@@ -81,14 +74,14 @@ section {
 }
 
 
-
-/* styling Titles in the content Boxes */
+/* Boxes Title */
 section h2, h3 {
 	padding-bottom: 30px;
 	border-bottom: solid #dddddd;
 	color: #4aaaa5;
 }
 
+/* Boxes Content */
 
 div#content {
 	width: 588px;
@@ -122,11 +115,8 @@ div#links img {
 	margin: 15px 5px 0px 5px;
 }
 
+/*------------------------- Styling footer ----------------------------*/
 
-
-
-
-/* Styling footer */
 footer {
 	background-color: #666666;
 	color: #ffffff;
@@ -135,9 +125,11 @@ footer {
 	font-size: 11px;
 	padding:20px;
 
+/* sticking footer at the bottom of the page */
+	position: fixed;
+    z-index: 100; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
 }
-
-
-
-/**/
 
