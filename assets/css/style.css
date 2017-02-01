@@ -10,42 +10,34 @@ body {
 	height: auto;
 }
 
-h1, h2, h3 {
+h1 { font-size: 36px; }
+h2 { font-size: 28px; }
+h3 { font-size: 20px; }
+
+}
+h1, h2, h3, span {
 	font-family: "Georgia", Times, "Times New Roman", serif;
 }
 
 p, a {
 	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 }
-h1 { font-size: 36px; }
-h2 { font-size: 26px; }
-h3 { font-size: 16px; }
 
 /*-------------------------- Efects -----------------------------------*/
 
+/* Nav Bar links changing color */
+a:hover { color: #49aaa5; }
+a:active { color: ; }
 
 
-div.linksContainer {
-	width: auto;
-	height: auto;
-	overflow: auto;
-}
-
-div.imgContainer {
-	width: 75px;
-	height: 85px;
-	float: left;
-}
-
-header img {
-	width: 54px;
-	height: 54px;
-	
-}
+/* re-sizing link images */
 .zoom:hover {
   height: 70px;
   width: 70px;
 }
+
+/* borer color portfolio cards */
+.portCard:hover { border: 3px solid #49aaa5; }
 
 /*-------------------------- Header -----------------------------------*/
 
@@ -55,7 +47,7 @@ header {
 	border-bottom: 2px solid #cccccc;
 }	
 
-div#myName {
+#myName {
 	text-align: center;
 	width: auto;
 	padding: 22px;
@@ -68,12 +60,17 @@ div#myName {
 
 /*-------------------- Navigation Bar inside Header ----------------------*/
 
-span {	/* Gray lines in navBar */
-	color:#e3e3e3; 
-	padding: 4px;
+#divisor {	/* Gray lines in navBar */
+	border: 2px solid #e3e3e3;
+	border-width: 0 2px 0 2px;
 }
 
-div.navBar {
+.navBar li {
+	padding: 0 8px 0 8px;
+}
+
+
+.navBar {
 	float: right;
 	padding: 30px 0 30px 0;
 }
@@ -89,6 +86,19 @@ header a {
 }
 
 /*--------------------Styling Boxes -----------------------------------*/
+
+/* Title Bars */
+.content hr {
+	border: 2px solid #e3e3e3;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.links hr {
+	border: 1px solid #e3e3e3;
+	margin-top: 20px;
+}
+
 /* Boxes Body */
 section {
 	width: auto;
@@ -98,50 +108,60 @@ section {
 	padding-bottom:97px;
 }
 
-.box {
-	background-color: #ffffff;
-	border: 1px solid #dddddd;
-}
-
-
-/* Boxes Title */
-section h2, h3 {
-	padding-bottom: 30px;
-	border-bottom: solid #dddddd;
-	color: #4aaaa5;
-}
-
 /* Boxes Content */
 
-div#content {
+.content {
 	width: 588px;
 	height: auto;
 	padding: 30px;
 	float: left;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
 }
 
-div#content img {
-	padding-top: 40px;
+.linksContainer {
+	width: auto;
+	height: auto;
+	overflow: auto;
+}
+
+.imgContainer {
+	width: 75px;
+	height: 85px;
 	float: left;
-	margin-right: 20px;
 }
 
-div#content p {
-	padding-top: 30px;
+.imgContainer img {
+	width: 64px;
+	height: 64px;
+}
+
+#myFoto {
+	float: left;
+	margin: 10px 20px 0 0;
+}
+
+.content h2 { color: #49aaa5; }
+
+.content p {
 	line-height: 2;
 	font-size: 16px;
+	color: #777777;
+
 }
 
-div#links {
-	width: 208;
+.links {
+	width: 230;
 	height: auto;
-	text-align: center;
-	color: #4aaaa5;
 	padding: 19px;
 	float: right;
+	text-align: center;
+	color: #4aaaa5;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;	
 }
 
-div#links img {
+.links img {
 	margin: 15px 5px 0px 5px;
 }
 
@@ -162,4 +182,62 @@ footer {
     left: 0;
     width: 100%;
 } 
+
+
+
+
+
+/*------------------------- Contact page ----------------------------*/
+
+
+input, textarea {
+	font-size: 15px;
+	padding: 10px;
+	width: 95%;
+	border: 1px solid #cccccc;
+}
+
+.contFormBtn {
+	color: #ffffff;
+	background-color: #49aaa5;
+	width: 20%;
+}
+
+/*------------------------- Portfolio page ----------------------------*/
+.portCard span {
+    font-size: 20px;
+    color: white;
+}
+
+.portImage {
+	width: 280px;
+	height: 200px;
+}
+.portContainer {
+	overflow: auto;
+
+}
+
+.portTag {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	background-color: #49aaa5;
+	padding: 15px 0 15px 0;
+
+
+}
+#left { float: left; }
+#right { float: right; }
+
+.portCard {
+	overflow: auto;
+	position: relative;
+	margin: 15px 0 15px 0;
+	text-align: center;
+	border: 3px solid white;
+}
+
+
+
 
