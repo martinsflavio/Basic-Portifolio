@@ -212,10 +212,10 @@ input, textarea {
 .portImage {
 	width: 278px;
 	height: 200px;
+	display: block;
 }
 .portContainer {
 	overflow: auto;
-
 }
 
 .portTag {
